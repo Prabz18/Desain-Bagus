@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prabu Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #004aad;
+      color: white;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 15px;
+      background-color: #003b8e;
+    }
+
+    .navbar h1 {
+      font-size: 20px;
+    }
+
+    .navbar button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 16px;
+    }
+
+    .search-container {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .search-container input {
+      width: 90%;
+      padding: 10px;
+      border-radius: 25px;
+      border: none;
+      outline: none;
+    }
+
+    .game-list {
+      display: flex;
+      justify-content: space-around;
+      margin: 15px 0;
+    }
+
+    .game-card {
+      background-color: #fff;
+      color: #000;
+      width: 10%;
+      border-radius: 10px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .game-card img {
+      width: 100%;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .game-card button {
+      background-color: #f4a42b;
+      border: none;
+      color: white;
+      width: 100%;
+      padding: 8px 0;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .rating {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    .menu-top {
+      display: flex;
+      justify-content: space-around;
+      background-color: #eee;
+      color: black;
+      padding: 10px 0;
+    }
+
+    .menu-top div {
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .beli-cepat {
+      background-color: #004aad;
+      padding: 15px;
+    }
+
+    .beli-cepat h2 {
+      margin: 0;
+    }
+
+    .kategori {
+      display: flex;
+      gap: 8px;
+      margin: 10px 0;
+    }
+
+    .kategori button {
+      border: none;
+      background-color: #003b8e;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .promo {
+      font-size: 13px;
+      color: yellow;
+      margin-bottom: 10px;
+    }
+
+    .beli-game {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .beli-item {
+      width: 10%;
+      background-color: #fff;
+      color: #000;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .beli-item img {
+      width: 100%;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .beli-item p {
+      margin: 5px 0;
+      font-weight: bold;
+    }
+
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #003b8e;
+      display: flex;
+      justify-content: space-around;
+      padding: 2px 0;
+    }
+
+    .bottom-nav div {
+      text-align: center;
+      font-size: 14px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <h1>☰ Prabu Store</h1>
+    <button>Masuk ⚙</button>
+  </div>
+
+  <div class="search-container">
+    <input type="text" placeholder="Cari game, voucher, item...">
+  </div>
+
+  <div class="game-list">
+    <div class="game-card">
+      <img src="P9.jpg" alt="Roblox">
+      <button>Klaim RBX</button>
+    </div>
+    <div class="game-card">
+      <img src="P8.jpg">
+      <button>Beli</button>
+    </div>
+    <div class="game-card">
+      <img src="P3.jpg" alt="Free Fire">
+      <button>Beli</button>
+    </div>
+  </div>
+
+  <div class="rating">
+    <p>⭐ Prabu 4.5 out of 5 — Perfect ⭐</p>
+  </div>
+
+  <div class="menu-top">
+    <div>🎮 Top up Game</div>
+    <div>👤 Akun</div>
+    <div>🎫 Voucher</div>
+    <div>🗝 Game Key</div>
+    <div>⚔ Item</div>
+  </div>
+
+  <div class="beli-cepat">
+    <h2>⚡ Beli Cepat</h2>
+    <p class="promo">Nikmati promo hingga 50% diskon!</p>
+    <div class="kategori">
+      <button>For You</button>
+      <button>Mobil</button>
+      <button>Voucher</button>
+      <button>PC Game</button>
+    </div>
+
+    <div class="beli-game">
+      <div class="beli-item">
+        <img src="P4.jpg" alt="Mobile Legends">
+        <p>Mobile Legends</p>
+      </div>
+      <div class="beli-item">
+        <img src="P5.jpg" alt="Valorant">
+        <p>Valorant</p>
+      </div>
+      <div class="beli-item">
+        <img src="P6.jpg" alt="Genshin Impact">
+        <p>Genshin</p>
+      </div>
+      <div class="beli-item">
+        <img src="P7.jpg" alt="Roblox">
+        <p>Roblox</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-nav">
+    <div>🏠 Home</div>
+    <div>🛒 Beli Cepat</div>
+    <div>💳 Transaksi</div>
+    <div>❤ Favorit</div>
+    <div>👤 Akun</div>
+  </div>
+
+</body>
+</html>
